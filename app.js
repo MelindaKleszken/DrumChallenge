@@ -1,4 +1,3 @@
-
 const clap = document.getElementById("a");
 const hihat = document.getElementById("s");
 const kick = document.getElementById("d");
@@ -10,10 +9,6 @@ const tom = document.getElementById("k");
 const tink = document.getElementById("l");
 
 
-//function playAudio() { 
-//    clap.play(); 
-//}
-
 document.addEventListener("keydown", (i) => { 
     if (i.key === "a") {
         clap.play();
@@ -22,18 +17,18 @@ document.addEventListener("keydown", (i) => {
     } else if (i.key === "d") {
         kick.play();
     } else if (i.key === "f") {
-        kick.play();
-    }else if (i.key === "g") {
-        kick.play();
-    }else if (i.key === "h") {
-        kick.play();
-    }else if (i.key === "j") {
-        kick.play();
-    }else if (i.key === "k") {
-        kick.play();
-    }else if (i.key === "l") {
-        kick.play();
-    }else {
-        hihat.play();
+        openhat.play();
+    } else if (i.key === "g") {
+        boom.play();
+    } else if (i.key === "h") {
+        ride.play();
+    } else if (i.key === "j") {
+        snare.play();
+    } else if (i.key === "k") {
+        tom.play();
+    } else if (i.key === "l") {
+        tink.play();
+    } else {
+        clap.play();
     }
 });
