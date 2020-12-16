@@ -33,6 +33,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-self: center;
     
 }
 
@@ -44,6 +45,11 @@ h1{
     font-size: 100px;
     margin:0;
     font-family: 'New Rocker', cursive;
+}
+h3{
+    font-size: 35px;
+    margin:0;
+    margin-top: 5px;
 }
 .instructions p {
     margin:0;
@@ -59,17 +65,21 @@ h1{
     color: white;    
     display: flex;
     flex-direction: row;
-    font-family: 'Open-sans', sans-serif;
-    
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open-sans', sans-serif;  
+}
+.button-group{
+    display: flex;    
 }
 
-.button, button{
+.button{
     background-color: rgba(49, 49, 49, 0.795);
     margin:10px;
-    width: 100%;
+    width: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
@@ -83,7 +93,25 @@ h1{
     transform: translateY(4px);
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 1080px){
+    main{
+        margin:0;
+        padding:0;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    .all-buttons{
+        flex-direction: column;
+        margin:0 0 5px 0;
+    }
+    .button-group{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 780px){
     body{
         display: flex;
         flex-direction: column; 
@@ -100,26 +128,34 @@ h1{
         margin:0;
         padding:0;
         width: 100%;
+        justify-content: center;
+        align-content: center;
     }
     h1{
         text-align: center;
-        font-size: 50px;
+        font-size: 70px;
+    }
+
+    h3{
+        font-size: 25px;
     }
     .instructions p{
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
-
     }
     .all-buttons{
         flex-direction: column;
-        height:360px;
         margin:0 0 5px 0;
+    }
+    .button-group{
+        display: flex;
+        flex-direction: row;
     }
     .button{
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        margin:5px 0;
+        margin:7px 10px;
         height: 40px;
     }
     .button:hover{
