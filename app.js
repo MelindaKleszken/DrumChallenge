@@ -1,4 +1,3 @@
-
 const clap = document.getElementById("a");
 const hihat = document.getElementById("s");
 const kick = document.getElementById("d");
@@ -32,24 +31,24 @@ document.addEventListener("keydown", (i) => {
     } 
 });
 
-document.addEventListener("click", (i) => { 
-    if (i.key === "a") {
+document.addEventListener("click", function (event) { 
+    if (event.key == "a") {
         clap.play();
-    } else if (i.key === "s") {
+    } else if (event.key == "s") {
         hihat.play();
-    } else if (i.key === "d") {
+    } else if (event.key == "d") {
         kick.play();
-    } else if (i.key === "f") {
+    } else if (event.key == "f") {
         openhat.play();
-    } else if (i.key === "g") {
+    } else if (event.key == "g") {
         boom.play();
-    } else if (i.key === "h") {
+    } else if (event.key == "h") {
         ride.play();
-    } else if (i.key === "j") {
+    } else if (event.key == "j") {
         snare.play();
-    } else if (i.key === "k") {
+    } else if (i.key == "k") {
         tom.play();
-    } else if (i.key === "l") {
+    } else if (event.key == "l") {
         tink.play();
     } 
 });

@@ -112,12 +112,15 @@ h1{
     }
     .all-buttons{
         flex-direction: column;
-        height:50vh;
+        height:360px;
         margin:0 0 5px 0;
     }
     .button{
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
         margin:5px 0;
+        height: 40px;
     }
     .button:hover{
         box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(247, 170, 3, 0.19);
@@ -127,6 +130,7 @@ h1{
         box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(247, 170, 3, 0.19);
         transform: translateY(4px);
     }
+    
 
 }
 
