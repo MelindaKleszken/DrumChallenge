@@ -7,8 +7,10 @@ const ride = document.getElementById("h");
 const snare = document.getElementById("j");
 const tom = document.getElementById("k");
 const tink = document.getElementById("l");
+const button = document.querySelectorAll(".button");
+const letter = [a,s,d,f,g,h,j,k,l];
 
-
+//play sounds with keyboard
 document.addEventListener("keydown", (i) => { 
     if (i.key === "a") {
         clap.play();
@@ -31,24 +33,9 @@ document.addEventListener("keydown", (i) => {
     } 
 });
 
-document.addEventListener("click", function (event) { 
-    if (event.key == "a") {
-        clap.play();
-    } else if (event.key == "s") {
-        hihat.play();
-    } else if (event.key == "d") {
-        kick.play();
-    } else if (event.key == "f") {
-        openhat.play();
-    } else if (event.key == "g") {
-        boom.play();
-    } else if (event.key == "h") {
-        ride.play();
-    } else if (event.key == "j") {
-        snare.play();
-    } else if (i.key == "k") {
-        tom.play();
-    } else if (event.key == "l") {
-        tink.play();
-    } 
-});
+//play sounds by clicking keys
+for (let i = 0; i < letter.length; i++) {
+  button[i].addEventListener("click", function() {
+    play(button);
+ });
+}
