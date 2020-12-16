@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum challenge</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>  
     
@@ -17,9 +17,9 @@
                     <p>USE KEYBOARD TO PLAY DRUM</p>
                 </div>
                 <div class="all-buttons" >
-                    <div class="button" id="p">
-                        <h3>P</h3>
-                        <P class="description">CLAP</P>
+                    <div class="button">
+                        <h3>A</h3>
+                        <P class="description">Clap</P>
                     </div>
                     <div class="button" id="s">
                         <h3>S</h3>
@@ -56,8 +56,12 @@
                 </div>
             </div>
         </div>
-        <script src="./app.js"></script>
+        
+
+        
     </div>
-    
+    <audio id="a" src="./assets/sounds/clap.wav" type="audio/wav"></audio>
+    <audio id="s" src="./assets/sounds/hihat.wav" type="audio/wav"></audio>
+    <script src="./app.js"></script>
 </body>
 </html>
