@@ -64,7 +64,7 @@ h1{
     
 }
 
-.button{
+.button, button{
     background-color: rgba(49, 49, 49, 0.795);
     margin:10px;
     width: 100%;
