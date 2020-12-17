@@ -8,7 +8,7 @@ const snare = document.getElementById("j");
 const tom = document.getElementById("k");
 const tink = document.getElementById("l");
 const button = document.querySelectorAll(".button");
-let letter ;
+//let letter;
 
 
 
@@ -37,16 +37,16 @@ document.addEventListener("keydown", (i) => {
 });
 
 
-//play sounds by clicking keys
-for (let i = 0; i < button.length; i++) {
+//play sounds by clicking keys ----this part still need a check
+/*for (let i = 0; i < button.length; i++) {
     button[i].addEventListener("click", function () {
     letter = this.innerHTML;
+    console.log(button);
     console.log(i);
     console.log(letter);
     });
 }
 function playSound() {
-    var sound = letter.getElementById("audio");
+    var sound = button.getElementById("audio");
     sound.play();
-}
-
+}*/
