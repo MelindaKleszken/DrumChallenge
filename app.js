@@ -8,8 +8,7 @@ const snare = document.getElementById("j");
 const tom = document.getElementById("k");
 const tink = document.getElementById("l");
 const button = document.querySelectorAll(".button");
-//let letter;
-
+console.log(button);
 
 
 
@@ -38,15 +37,31 @@ document.addEventListener("keydown", (i) => {
 
 
 //play sounds by clicking keys ----this part still need a check
-/*for (let i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", function () {
-    letter = this.innerHTML;
-    console.log(button);
-    console.log(i);
+for (let i = 0; i < button.length; i++) {
+    document.addEventListener("click", function () {
+    
+    let letter = this[i].id;
+    
+    //console.log(i);
     console.log(letter);
+    
     });
 }
-function playSound() {
+/*function playSound() {
     var sound = button.getElementById("audio");
     sound.play();
 }*/
+
+
+
+/*
+function myFunction() {
+    let button = document.querySelectorAll(".button")[0].id;
+    console.log(button);
+    let letter = "";
+    
+    for (let i = 0; i < button.attributes.length; i++) {
+      letter = letter + button.attributes[i].name + " = " + button.attributes[i].value + "<br>";
+    }
+    this.innerHTML = letter;
+  }*/
